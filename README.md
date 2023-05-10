@@ -1,9 +1,24 @@
-# Tempest-EPG-Generator
+# Tempest EPG Generator
 The Most Advanced Programmable GUI XMLTV EPG Generator
-<br><br><a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-nd/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/">Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License</a>.<br><br>
-Copyright (c) 2019-2022 by Kivanc Altug<br><br>
+
+![CC](https://img.shields.io/badge/license-Creative%20Commons-red.svg)
+![Release](https://img.shields.io/github/release/K-vanc/Tempest-EPG-Generator.svg)
+![PHP](https://img.shields.io/badge/language-php-fuchsia.svg)
+![TempestWIKI](https://img.shields.io/badge/documentation-TempestWIKI-orange.svg)
+![Issues](https://img.shields.io/github/issues/K-vanc/Tempest-EPG-Generator?style=flat?2)
+
+| Total Available Siteconfigs | Total Covered Countries | Total Available Channels |
+| :---: | :---: | :---: |
+| 462 | 152 | +270500 |
+
+
+<br>
+<p align="center"><img src="https://user-images.githubusercontent.com/97025515/154066443-d8d8f358-9985-477f-9667-d53aa409c6b3.png">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-nd/4.0/88x31.png" /></a></p>
+<br>This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/">Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License</a>.<br><br>
+Copyright © 2019-2023 by Kivanc Altug<br><br>
 Contact Info:<br>
 📧 tempestepg@gmail.com<br><br>
+
 ![tmpstr](https://user-images.githubusercontent.com/97025515/148374196-b02d02fb-6251-4121-aa5c-c798ae9e1e58.jpg)
 ## What is Tempest?
 Tempest is a fully programmable XMLTV formatted EPG(Electronic Program Guide) generator bundled in a single php file with;<br>
@@ -22,11 +37,12 @@ Tempest is a fully programmable XMLTV formatted EPG(Electronic Program Guide) ge
 <br>&nbsp;&nbsp;&nbsp;&nbsp;✔ Scrapping Engine Built with Regex (Regular Expression) For Powerful Operations
 <br>&nbsp;&nbsp;&nbsp;&nbsp;✔ Built-In Cyclone Module to Add Alternative For Failed Channel
 <br>&nbsp;&nbsp;&nbsp;&nbsp;✔ Built-In Time Converter to Change Times of All Shows Into Requested Time Offset (DST Support)
-<br>&nbsp;&nbsp;&nbsp;&nbsp;✔ Built-In Inverter Module to Transfer XMLTV Elements Into Description With Requested Order & Sytle
+<br>&nbsp;&nbsp;&nbsp;&nbsp;✔ Built-In Inverter Module to Modify/Move XMLTV Elements Into Other Elements With Requested Order & Style
 <br>&nbsp;&nbsp;&nbsp;&nbsp;✔ Built-In Fusion Module to Keep Previous Dated Shows Upto 15 Days For Catch-Up Service
 <br>&nbsp;&nbsp;&nbsp;&nbsp;✔ Built-In GUI Configuration Maker With Channel Picker/Editor & Auto-Duplicate Channel Verification
 <br>&nbsp;&nbsp;&nbsp;&nbsp;✔ Built-In GUI Configuration Debugger
 <br>&nbsp;&nbsp;&nbsp;&nbsp;✔ Built-In File Downloader (via GUI) & Gz/Zip Compression Support
+<br>&nbsp;&nbsp;&nbsp;&nbsp;✔ Built-In Configuration Updater to Download Latest Revisions
 <br>&nbsp;&nbsp;&nbsp;&nbsp;✔ Multiple Configuration File Support Up to 5000 Channels For Each
 <br>&nbsp;&nbsp;&nbsp;&nbsp;✔ Scheduled Operations (such as crontab etc.)
 <br>&nbsp;&nbsp;&nbsp;&nbsp;✔ Remote Access, Operations & Downloading (port-forwarding required)
@@ -40,7 +56,7 @@ or from your commandline;
 Tempest will generate its own subfolder structure and necessary files on first start-up. It is that easy.<br><br>
 **Note: It is strongly advised for Unix users to set proper ownership/permissions of their php server before first start-up to let Tempest generate its folder/files.**<br>
 ## What else I need for Tempest?
-Basicly, nothing except a running PHP server. Tempest is developed on PHP 7 enviroment but should work fine with any PHP version > 5.3. Also some quick tests are showing that Tempest will work fine on PHP 8 (tested on PHP 8.1)
+Basicly, nothing except a running PHP server for GUI operations or php.exe file which can be downloaded from official php page. Tempest is developed on PHP 7 enviroment but should work fine with any PHP version > 5.3. Also some quick tests are showing that Tempest will work fine on PHP 8 (tested on PHP 8.1)
 ## How can I use Tempest?
 Once you run Tempest, you can choose one of the modes from drop-down list as;<br>
 <br>&nbsp;&nbsp;&nbsp;&nbsp;🔹 Siteconfig Maker => You can create your own website configuration file
@@ -98,8 +114,9 @@ or<br>
 **sudo systemctl reload apache2**
 <br><br>For Windows, I didnt see such setting or limitation. I think it is set to "no limit" by default for Windows.<br><br>
 ## For more detailed information about usage and features, please take a look into **Declaration** and **TempestWIKI** documents..
-<br><p align="center"><img src="https://user-images.githubusercontent.com/97025515/151149670-554137dd-2395-4982-ab42-4ac4ba382fa9.png"><img src="https://user-images.githubusercontent.com/97025515/151745807-1709ed8e-9de6-4299-844f-4e80e7f73598.png"></p>
-## If you like the project, please consider a donation to support me & project
+<p align="center"><img src="https://user-images.githubusercontent.com/97025515/151149670-554137dd-2395-4982-ab42-4ac4ba382fa9.png"><img src="https://user-images.githubusercontent.com/97025515/151745807-1709ed8e-9de6-4299-844f-4e80e7f73598.png"></p>
+
+## If you like the project, please consider a donation to support
 <p align="center"><img src="https://user-images.githubusercontent.com/97025515/151753283-d7780e5b-0d6f-4277-a487-b5a3f015b55e.png"><img src="https://user-images.githubusercontent.com/97025515/151753477-ec61f707-9468-456e-b719-ce8340c69e4b.png"></p>
 <p align="center"><a href="https://wise.com/" target="_blank"><img src="https://user-images.githubusercontent.com/97025515/151751079-415aeb56-d399-4b27-9250-d6dca6ac7c27.png"></a></p>
 
@@ -124,5 +141,4 @@ Currency : $ (USD)<br>
 Routing No : 084009519<br>
 Account No : 9600000000354348<br>
 Account Type : Checking<br>
-IBAN : GB18 TRWI 2314 7084 7361 67<br>
 Bank Address : 19 W 24th Street, New York NY, 10010, United States**
